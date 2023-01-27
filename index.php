@@ -34,3 +34,31 @@
  *
  * 5. Créez une instance de Appartement et invoquez toutes les méthodes définies, y compris les setters ( dans index.php ).
  */
+
+require "./classes/Habitation.php";
+require "./classes/Appartement.php";
+require "./classes/Maison.php";
+
+$maison = new Maison('France', 'Bordeaux', 33000, 3,
+    5, false, 2, false);
+
+echo 'La maison : <br><br>';
+echo 'Le pays : ' . $maison->getPays() . '<br>';
+echo 'La ville : ' . $maison->getVille() . '<br>';
+echo 'Le code postal : ' . $maison->getPostal() . '<br>';
+echo 'Les chambres : ' . $maison->getChambres() . '<br>';
+echo 'Les pièces : ' . $maison->getPieces() . '<br>';
+echo 'Le jardin : ' . $maison->getJardin() . '<br>';
+echo 'Les étages : ' . $maison->getEtages() . '<br>';
+echo 'Le garage : ' . $maison->getGarage() . '<br><br><br><br>';
+
+$maison = new Appartement('France', 'Paris', 75002, 5,
+    7, true);
+
+echo 'L\'appartement : <br><br>';
+echo 'Le pays : ' . $maison->getPays() . '<br>';
+echo 'La ville : ' . $maison->getVille() . '<br>';
+echo 'Le code postal : ' . $maison->getPostal() . '<br>';
+echo 'Les chambres : ' . $maison->getChambres() . '<br>';
+echo 'Les pièces : ' . $maison->getPieces() . '<br>';
+echo 'Le garage : ' . $maison->getGarage() . '<br>';
